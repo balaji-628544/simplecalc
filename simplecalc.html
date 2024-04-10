@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>SIMPLE CALUCULATOR</title>
+    <script>
+        
+        function input(input)
+        {
+            document.getElementById("res").value+=input;
+        }
+        function c()
+        {
+            document.getElementById("res").value="";
+        }
+        function cal()
+        {
+            var output=eval(document.getElementById("res").value)
+            document.getElementById("res").value=output;
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="simplecalc.css">
+<body>
+    <div class="simp">
+        <p>SIMPLE CALCULATOR</p>
+    </div>
+    <div class="simpsub">
+    <div class="cont">
+                <input type="text" id="res" class="input">
+            
+                <button onclick="c()" class="inputAc inputh">
+                    AC
+                </button>
+                <button onclick="input(1)" class="input1 inputh">
+                    1
+                </button>
+                <button onclick="input(2)"
+                class="input2 inputh">
+                    2
+                </button>
+                <button onclick="input(3)"
+                class="input3 inputh">
+                    3
+                </button>
+                <button onclick="input('+')"
+                class="input+ inputh">
+                    +
+                </button>
+                <button onclick="input(4)"
+                class="input4 inputh">
+                    4
+                </button>
+            
+                <button onclick="input(5)"
+                class="input5 inputh">
+                    5
+                </button>
+           
+                <button onclick="input(6)"
+                class="input6 inputh">
+                    6
+                </button>
+            
+                <button onclick="input('-')"
+                class="input- inputh">
+                    -
+                </button>
+          
+                <button onclick="input(7)"
+                class="input7 inputh">
+                    7
+                </button>
+          
+                <button onclick="input(8)"
+                class="input8 inputh">
+                    8
+                </button>
+           
+                <button onclick="input(9)"
+                class="input9 inputh">
+                    9
+                </button>
+          
+                <button onclick="input('*')"
+                class="input* inputh">
+                    *
+                </button>
+         
+                <button onclick="input('/')"
+                class="input/ inputh">
+                    /
+                </button>
+             
+                <button onclick="input('%')"
+                class="input% inputh">
+                    %
+                </button>
+             
+                <button onclick="input(0)"
+                class="input0 inputh">
+                    0
+                </button>
+                    
+                <button  onclick="cal()"
+                class="input= inputh">
+                    =
+                </button>
+            </div>
+        </div>
+</body>
+</html>
